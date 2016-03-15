@@ -7931,6 +7931,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED5" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="64.9"/>
+<part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -8020,13 +8022,15 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="GND14" gate="1" x="167.64" y="114.3"/>
 <instance part="GND15" gate="1" x="167.64" y="101.6"/>
 <instance part="GND16" gate="1" x="167.64" y="127"/>
-<instance part="GND17" gate="1" x="101.6" y="22.86"/>
-<instance part="U$3" gate="G$1" x="91.44" y="30.48"/>
-<instance part="SUPPLY7" gate="G$1" x="101.6" y="38.1"/>
+<instance part="GND17" gate="1" x="99.06" y="20.32"/>
+<instance part="U$3" gate="G$1" x="78.74" y="27.94"/>
+<instance part="SUPPLY7" gate="G$1" x="99.06" y="33.02"/>
 <instance part="SUPPLY8" gate="G$1" x="12.7" y="35.56"/>
 <instance part="GND18" gate="1" x="12.7" y="22.86"/>
 <instance part="LED5" gate="G$1" x="-22.86" y="96.52"/>
 <instance part="R10" gate="G$1" x="-15.24" y="88.9"/>
+<instance part="R11" gate="G$1" x="86.36" y="33.02"/>
+<instance part="C7" gate="G$1" x="91.44" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -8148,7 +8152,10 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="101.6" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="22.86" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<junction x="91.44" y="22.86"/>
 </segment>
 <segment>
 <pinref part="ICSP" gate="A" pin="6"/>
@@ -8301,10 +8308,12 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="208.28" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="V+"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="101.6" y1="38.1" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="30.48" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<junction x="91.44" y="33.02"/>
 </segment>
 <segment>
 <pinref part="ICSP" gate="A" pin="2"/>
@@ -8522,8 +8531,8 @@ Source: http://www.osram.convergy.de/</description>
 <net name="IR_RX" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="OUT"/>
-<wire x1="99.06" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
-<label x="101.6" y="30.48" size="1.778" layer="95"/>
+<wire x1="86.36" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<label x="99.06" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PF1(ADC1)"/>
@@ -8596,6 +8605,13 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="STAT"/>
 <wire x1="-10.16" y1="88.9" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="V+"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
