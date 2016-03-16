@@ -16,6 +16,10 @@ Het Arduino platform laat iedereen toe om de software van de badge aan te passen
 
 Aan de hand van de IR componenten en bijhorende software kunnen de elementaire aspecten van draadloze communicatie uitgelegd worden. Het IR netwerk laat niet alleen communicatie tussen badges toe, maar zal ook de ervaring van het hele kamp _interactief_ maken.
 
+### Meta-Leerzaam
+
+Dit ontwerp is mijn eerste SMD-gebaseerde project en het is op zich al een leerzame ervaring. Daarom bevat deze repository tevens een [design dagboek](design/dagboek.md) waarin ik alle stappen van het proces beschrijf.
+
 ## Hardware Design
 
 Twee bestaande projecten kunnen beschouwd worden als de spreekwoordelijke ouders van de badge: 
@@ -24,6 +28,20 @@ Twee bestaande projecten kunnen beschouwd worden als de spreekwoordelijke ouders
 * [TV B Gone van Mitch Altman](https://cornfieldelectronics.com/tvbgone/tvbg.home.php)
 
 Voeg nog een IR receiver en een RGB LED toe en je hebt alle basis componenten voor een leerzamen, interactieve en zeer _hack_-bare Fri3d Camp badge!
+
+## Software
+
+Om zelf aan de slag te gaan met de software zo eenvoudig mogelijk te maken, was één van dé belangrijkste aspecten een makkelijke integratie met het Arduino software platform. De mogelijkheid om de badge te programmeren via de Arduino IDE door middel van louter een micro-USB kabel was daarom een noodzaak.
+
+Om het Arduino platform nog verder zo veel mogelijk te gebruiken, hebben we ook gekozen om zo dicht mogelijk bij een bestaand Arduino bord te blijven en zo is de badge in essentie een [Arduino Mirco](https://www.arduino.cc/en/Main/ArduinoBoardMicro) geworden.
+
+Je kan dus onmiddellijk aan de slag, zoals met elke andere Arduino. Daarnaast bevat deze repository enkele applicaties specifiek geschreven voor de Fri3d Camp badge, en dit naast een bibliotheek die het aanspreken van de extras makkelijk maakt. Zo vindt je (weldra) hier:
+
+* dé Fri3d Camp 2016 app
+* een implementatie van de TV B Gone applicatie van Mitch Altman
+* ...
+
+Als je zelf een nieuwe app maakt die op de Fri3d Camp badge werkt en op een andere, leuke manier gebruik maakt van het IR netwerk en de RGB LED of van andere componenten die je er zelf aan toegevoegd hebt, bezorg ons dan deze code en we voegen ze toe aan deze repository.
 
 ## Credits
 
