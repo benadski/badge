@@ -1,3 +1,4 @@
 *.lck
 *.s#?
 design/fri3d_badge_2016.pdf
+.DS_Store
