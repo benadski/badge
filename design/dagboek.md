@@ -46,10 +46,29 @@ Om deze te kunnen opladen, hebben we een integratie nodig met de inkomende USB v
 
 ![USB LiPo Charger](media/usb-lipo-charger.png)
 
-## Fri3d Badge Schema versie 1
+### Fri3d Badge Schema versie 1
 
 De combinatie van de drie voorgaand vermelde referentie designs, gecombineerd met nog een knopje, RGB LED en IR ontvanger, levert ons ...
 
 ![Fri3d Badge Schema versie 1](media/fri3d-badge-v1.png)
+
+## Eerst optimalisaties
+
+Met versie 1 onder de arm op naar enkele hulplijnen. Met het oog op zo veel mogelijk automatisering van de productie, zijn enkele aspecten zeer belangrijk:
+
+1. Hoe minder componenten, hoe minder er kan fout gaan.
+2. Hoe minder verschillende componenten, hoe meer dat er geautomatiseerd kan verlopen.
+
+Met dat motto in gedachte werden volgende aanpassingen aan versie 1 doorgevoerd:
+
+1. Vervanging van de PNP + NPN constructie voor de IR LEDs door een enkele N-channel MOSFET.
+2. Vervanging van weerstanden door combinaties van dezelfde weerstanden (e.g. 2 weerstanden van 220&ohm; in parallel is ongeveer gelijk aan één van 100&ohm; enz)
+3. Enkele fouten en redundante componenten werden bijgewerkt/verwijderd.
+
+### Fri3d Badge Schema versie 2
+
+En dat levert ons een versie op waarmee ik aan de slag kan om de layout van de PCB te maken...
+
+![Fri3d Badge Schema versie 2](media/fri3d-badge-v2.png)
 
 **Wordt vervolgd...**
