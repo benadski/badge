@@ -31,11 +31,11 @@ Voeg nog een IR receiver en een RGB LED toe en je hebt alle basis componenten vo
 
 ## Software
 
-Om zelf aan de slag te gaan met de software zo eenvoudig mogelijk te maken, was één van dé belangrijkste aspecten een makkelijke integratie met het Arduino software platform. De mogelijkheid om de badge te programmeren via de Arduino IDE door middel van louter een micro-USB kabel was daarom een noodzaak.
+Om zelf aan de slag te gaan met de [software](src/README.md) zo eenvoudig mogelijk te maken, was één van dé belangrijkste aspecten een makkelijke integratie met het Arduino software platform. De mogelijkheid om de badge te programmeren via de Arduino IDE door middel van louter een micro-USB kabel was daarom een noodzaak.
 
 Om het Arduino platform nog verder zo veel mogelijk te gebruiken, hebben we ook gekozen om zo dicht mogelijk bij een bestaand Arduino bord te blijven en zo is de badge in essentie een [Arduino Mirco](https://www.arduino.cc/en/Main/ArduinoBoardMicro) geworden.
 
-Je kan dus onmiddellijk aan de slag, zoals met elke andere Arduino. Daarnaast bevat deze repository enkele applicaties specifiek geschreven voor de Fri3d Camp badge, en dit naast een bibliotheek die het aanspreken van de extras makkelijk maakt. Zo vindt je (weldra) hier:
+Je kan dus onmiddellijk aan de slag, zoals met elke andere Arduino. Daarnaast bevat deze [repository](src/README.md) enkele applicaties specifiek geschreven voor de Fri3d Camp badge, en dit naast een bibliotheek die het aanspreken van de extras makkelijk maakt. Zo vindt je (weldra) hier:
 
 * dé Fri3d Camp 2016 app
 * een implementatie van de TV B Gone applicatie van Mitch Altman
@@ -45,5 +45,4 @@ Als je zelf een nieuwe app maakt die op de Fri3d Camp badge werkt en op een ande
 
 ## Credits
 
-De badge werd ontworpen door Christophe VG, samen met de hele Fri3d Camp organisatie, en uitgewerkt met de hulp van Dragan Subotic, Yannick Verbelen, ...
-
+De badge werd ontworpen door Christophe VG, samen met de hele Fri3d Camp organisatie, en uitgewerkt met de hulp van Dragan Subotic, Yannick Verbelen, Maarten Weyn, Willy De a Court, Anthony Liekens,...
