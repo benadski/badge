@@ -8169,9 +8169,9 @@ Created 2014-07-09, Karrer Zheng&lt;br&gt;
 <wire x1="162.56" y1="83.82" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PF6(ADC6)"/>
-<wire x1="106.68" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
-<label x="134.62" y="142.24" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD0(SCL)"/>
+<wire x1="106.68" y1="114.3" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="137.16" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON" class="0">
