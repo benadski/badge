@@ -5,3 +5,11 @@ design/fri3d_badge_2016.pdf
 *.job
 *.pro
 *.b#?
+*.cmp
+*.drd
+*.dri
+*.gpi
+*.plc
+*.sol
+*.stc
+*.sts
