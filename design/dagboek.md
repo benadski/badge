@@ -52,7 +52,7 @@ De combinatie van de drie voorgaand vermelde referentie designs, gecombineerd me
 
 ![Fri3d Badge Schema versie 1](media/fri3d-badge-v1.png)
 
-## Eerst optimalisaties
+## Eerste optimalisaties
 
 Met versie 1 onder de arm op naar enkele hulplijnen. Met het oog op zo veel mogelijk automatisering van de productie, zijn enkele aspecten zeer belangrijk:
 
@@ -70,5 +70,26 @@ Met dat motto in gedachte werden volgende aanpassingen aan versie 1 doorgevoerd:
 En dat levert ons een versie op waarmee ik aan de slag kan om de layout van de PCB te maken...
 
 ![Fri3d Badge Schema versie 2](media/fri3d-badge-v2.png)
+
+## PCB Layout
+
+De Fri3d Badge heeft op het eerste zicht al één belangrijke eigenschap: zijn vorm is geen klassieke PCB-vorm, want we willen ze de vorm geven van het logo.
+
+Na het tekenen van de omtrek ga je aan de slag om de componenten een plek te geven. Hierbij probeer je zo veel mogelijk logische blokken te maken en het aantal kruisende lijnen (air wires) te minimaliseren.
+
+De PCB zal opgebouwd worden uit twee lagen, de voor- en achterkant van de badge. Op de achterkant komt hoofdzakelijk de oplaadbare batterij en de bijhorende connector. Centraal op de voorkant komt de microcontroller en daarrond de verschillende functionele componenten: IR LEDs, IR receiver, RGB LED, knop, laadcircuit, USB connector, ICSP connector.
+
+Na een avondje zwoegen kom je dan, met wat hulp, tot een eerste PCB layout:
+
+![Fri3d Badge Layout versie 1](media/pcb-layout-v1.png)
+
+Enkele tips:
+
+* Creëer op de onderkant een groot vlak en verbindt dit met GND. Nu hoef je van de bovenkant slechts een via te maken en je hebt directe toegang tot de GND. Zie het grote blauwe vlak op de layout hierboven.
+* De zelfde truc kan je bij een meer-dan-twee lagen PCB ook doen voor VCC, maar die luxe hebben we hier niet. Daarom truc nr. 2: maak een dikke VCC-omranding! Niet meer gewoon te bereiken met een via, maar wel langs een kort baantje naar de buitenzijde van de PCB.
+
+### Eerste Prototype(s)
+
+En dan is het tijd om de virtuele wereld van Eagle te verlaten en echte prototypes te maken. Met een koffer vol componenten trokken we naar het electronica-lab van de Erasmus Hoge School om zelf PCBs te etsen en te voorzien van componenten - een hele onderneming.
 
 **Wordt vervolgd...**
