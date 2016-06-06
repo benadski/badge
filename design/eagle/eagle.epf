@@ -19,7 +19,9 @@ UsedLibrary="/Applications/EAGLE-7.5.0/lbr/74xx-little-us.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/74xx-us.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/751xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/Badge_EZR_V1.lbr"
+UsedLibrary="/Applications/EAGLE-7.5.0/lbr/FriedCamp.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/IQD-Frequency-Products.lbr"
+UsedLibrary="/Applications/EAGLE-7.5.0/lbr/OCTA-EZR_v1.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/advanced-test-technologies.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/agilent-technologies.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/allegro.lbr"
@@ -375,12 +377,16 @@ UsedLibrary="/Users/xtof/Workspace/Eagle-Libraries/stepper.lbr"
 UsedLibrary="/Users/xtof/Workspace/Eagle-Libraries/triac.lbr"
 UsedLibrary="/Users/xtof/Workspace/Eagle-Libraries/valves2.lbr"
 UsedLibrary="/Users/xtof/Workspace/Eagle-Libraries/varistor.lbr"
-UsedLibrary="/Applications/EAGLE-7.5.0/lbr/OCTA-EZR_v1.lbr"
-UsedLibrary="/Applications/EAGLE-7.5.0/lbr/FriedCamp.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="0 23 599 422"
+State=1
+Number=0
+
+[Win_2]
 Type="Schematic Editor"
-Loc="0 -22 599 377"
+Loc="0 23 599 422"
 State=1
 Number=1
 File="fri3d_badge_2016.sch"
@@ -426,20 +432,14 @@ Layer=91
 Views=" 1: -59.9732 -26.7282 249.402 179.276"
 Sheet="1"
 
-[Win_2]
-Type="Control Panel"
-Loc="0 -22 599 377"
-State=1
-Number=0
-
 [Win_3]
 Type="Board Editor"
 Loc="0 -22 599 377"
 State=1
 Number=2
 File="fri3d_badge_2016.brd"
-View="-2.63995 -7.67627 85.092 69.269"
-WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 1.016 0.4064"
+View="-10.711 -1.04187 67.8632 68.0414"
+WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
 ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -459,7 +459,7 @@ WireBendSet=0
 WireCap=1
 MiterStyle=0
 PadShape=0
-ViaShape=1
+ViaShape=0
 PolygonPour=0
 PolygonRank=1
 PolygonThermals=1
@@ -476,7 +476,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=1
+Layer=16
 
 [Desktop]
 Screen="1680 1050"
