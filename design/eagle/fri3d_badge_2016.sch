@@ -7661,172 +7661,6 @@ Source: 008-0260-0_E.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Input-Output_Connectors_rev15d">
-<description>&lt;BR&gt;Wurth Elektronik - Input/Output Connectors &lt;br&gt;&lt;Hr&gt;
-&lt;BR&gt;&lt;BR&gt; 
-&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
-&lt;TR&gt;   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------------------------&lt;BR&gt;
-&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
-  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
-&lt;BR&gt;
-      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  
-&lt;/TABLE&gt;
-&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
-
-&lt;HR&gt;&lt;BR&gt;
-&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
-EMC &amp; Inductive Solutions&lt;br&gt;
-
-Max-Eyth-Str.1&lt;br&gt;
-D-74638 Waldenburg&lt;br&gt;
-&lt;br&gt;
-Tel: +49 (0)7942-945-0&lt;br&gt;
-Fax:+49 (0)7942-945-405&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.we-online.com/eagle"&gt;http://www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
-&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
-&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
-Neither CadSoft nor WE-eiSos does warrant that this library is error-free or &lt;br&gt;
-that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
-Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
-&lt;hr&gt;
-Eagle Version 6, Library Revision 2015c, 2015-06-02&lt;br&gt;
-&lt;HR&gt;
-Copyright: Würth Elektronik</description>
-<packages>
-<package name="65100516121">
-<description>WR-COM SMT Horizontal 5 Contacts Mini USB Typ B</description>
-<wire x1="-4.45" y1="-2.64" x2="4.45" y2="-2.64" width="0.127" layer="21"/>
-<wire x1="4.45" y1="-2.64" x2="4.45" y2="6.56" width="0.127" layer="51"/>
-<wire x1="4.45" y1="6.56" x2="-4.45" y2="6.56" width="0.127" layer="51"/>
-<wire x1="-4.45" y1="6.56" x2="-4.45" y2="-2.64" width="0.127" layer="51"/>
-<smd name="1" x="-1.6" y="5.685" dx="0.5" dy="2.25" layer="1"/>
-<smd name="2" x="-0.8" y="5.685" dx="0.5" dy="2.25" layer="1"/>
-<smd name="3" x="0" y="5.685" dx="0.5" dy="2.25" layer="1"/>
-<smd name="4" x="0.8" y="5.685" dx="0.5" dy="2.25" layer="1"/>
-<smd name="5" x="1.6" y="5.685" dx="0.5" dy="2.25" layer="1"/>
-<smd name="Z1" x="-4.45" y="5.56" dx="2" dy="2.5" layer="1"/>
-<smd name="Z2" x="4.45" y="5.56" dx="2" dy="2.5" layer="1"/>
-<smd name="Z3" x="4.45" y="0.11" dx="2" dy="2.5" layer="1"/>
-<smd name="Z4" x="-4.45" y="0.11" dx="2" dy="2.5" layer="1"/>
-<text x="-3" y="8.18" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-4.98" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="-2.2" y="3.01" drill="0.9"/>
-<hole x="2.2" y="3.01" drill="0.9"/>
-<wire x1="-2.9591" y1="1.0329" x2="-2.7514" y2="-1.7185" width="0.1016" layer="51"/>
-<wire x1="-2.7514" y1="-1.7185" x2="-2.5438" y2="-1.978" width="0.1016" layer="51" curve="68.629849"/>
-<wire x1="-2.5438" y1="-1.978" x2="-1.9727" y2="-1.978" width="0.1016" layer="51" curve="34.099487"/>
-<wire x1="-1.9727" y1="-1.978" x2="-1.7651" y2="-1.7185" width="0.1016" layer="51" curve="68.629849"/>
-<wire x1="-1.7651" y1="-1.7185" x2="-1.5055" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="-1.5055" y1="1.0329" x2="-1.7132" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="-1.7132" y1="1.0329" x2="-1.9727" y2="-1.3551" width="0.1016" layer="51"/>
-<wire x1="-1.9727" y1="-1.3551" x2="-2.4919" y2="-1.3551" width="0.1016" layer="51"/>
-<wire x1="-2.4919" y1="-1.3551" x2="-2.7514" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="-2.7514" y1="1.0329" x2="-2.9591" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="2.9589" y1="1.0329" x2="2.7512" y2="-1.7185" width="0.1016" layer="51"/>
-<wire x1="2.7512" y1="-1.7185" x2="2.5436" y2="-1.978" width="0.1016" layer="51" curve="-68.629849"/>
-<wire x1="2.5436" y1="-1.978" x2="1.9725" y2="-1.978" width="0.1016" layer="51" curve="-34.099487"/>
-<wire x1="1.9725" y1="-1.978" x2="1.7649" y2="-1.7185" width="0.1016" layer="51" curve="-68.629849"/>
-<wire x1="1.7649" y1="-1.7185" x2="1.5053" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="1.5053" y1="1.0329" x2="1.713" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="1.713" y1="1.0329" x2="1.9725" y2="-1.3551" width="0.1016" layer="51"/>
-<wire x1="1.9725" y1="-1.3551" x2="2.4917" y2="-1.3551" width="0.1016" layer="51"/>
-<wire x1="2.4917" y1="-1.3551" x2="2.7512" y2="1.0329" width="0.1016" layer="51"/>
-<wire x1="2.7512" y1="1.0329" x2="2.9589" y2="1.0329" width="0.1016" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="5_USB">
-<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="3.81" y2="7.62" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
-<text x="-5.08" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5GND" x="-7.62" y="-5.08" length="middle" direction="pas"/>
-<pin name="4ID" x="-7.62" y="-2.54" length="middle" direction="pas"/>
-<pin name="3D+" x="-7.62" y="0" length="middle" direction="pas"/>
-<pin name="2D-" x="-7.62" y="2.54" length="middle" direction="pas"/>
-<pin name="1VCC" x="-7.62" y="5.08" length="middle" direction="pas"/>
-<wire x1="5.08" y1="8.89" x2="5.08" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
-<wire x1="5.08" y1="-8.89" x2="1.27" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
-<wire x1="1.27" y1="-8.89" x2="1.27" y2="-10.16" width="0.254" layer="94" style="shortdash"/>
-<pin name="GND@1" x="-5.08" y="-10.16" length="middle"/>
-<pin name="GND@2" x="-5.08" y="-12.7" length="middle"/>
-<wire x1="1.27" y1="-10.16" x2="1.27" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="-10.16" x2="1.27" y2="-10.16" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="-12.7" x2="1.27" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
-<wire x1="1.27" y1="8.89" x2="5.08" y2="8.89" width="0.254" layer="94" style="shortdash"/>
-<text x="4.445" y="-2.2225" size="1.778" layer="94" rot="R90">USB</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="65100516121" prefix="K">
-<description>&lt;b&gt;WR-COM SMT Horizontal 5 Contacts Mini USB Typ B&lt;/b&gt;=&gt;Code : Con_I-O_COM_MiniUSB_65100516121
-&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_I-O_COM_MiniUSB_65100516121_pf2.jpg" title="Enlarge picture"&gt;
-&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_I-O_COM_MiniUSB_65100516121_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="http://katalog.we-online.de/en/em/651_005_161_21"&gt;http://katalog.we-online.de/en/em/651_005_161_21&lt;/a&gt;&lt;p&gt;
-Created 2014-07-09, Karrer Zheng&lt;br&gt;
-2014 (C) Würth Elektronik</description>
-<gates>
-<gate name="G$1" symbol="5_USB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="65100516121">
-<connects>
-<connect gate="G$1" pin="1VCC" pad="1"/>
-<connect gate="G$1" pin="2D-" pad="2"/>
-<connect gate="G$1" pin="3D+" pad="3"/>
-<connect gate="G$1" pin="4ID" pad="4"/>
-<connect gate="G$1" pin="5GND" pad="5"/>
-<connect gate="G$1" pin="GND@1" pad="Z1 Z2"/>
-<connect gate="G$1" pin="GND@2" pad="Z3 Z4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="GeekAmmo">
 <description>&lt;h3&gt;GeekAmmo  Library&lt;/h3&gt;
 
@@ -8071,6 +7905,78 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="OCTA-EZR_v1">
+<description>Generated from &lt;b&gt;OCTA-EZR_v1.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="OCTA-CORE_MICRO-USB2">
+<wire x1="-5.2" y1="-4.15" x2="5.2" y2="-4.15" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.3" y="0" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P$2" x="-0.65" y="0" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P$3" x="0" y="0" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P$4" x="0.65" y="0" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P$5" x="1.3" y="0" dx="0.4" dy="1.35" layer="1"/>
+<pad name="P$6" x="-2.5" y="0" drill="1" diameter="1.5"/>
+<pad name="P$7" x="2.5" y="0" drill="1" diameter="1.5"/>
+<smd name="P$8" x="1" y="-2.7" dx="1.5" dy="1.55" layer="1"/>
+<smd name="P$9" x="-1" y="-2.7" dx="1.5" dy="1.55" layer="1"/>
+<smd name="P$10" x="-3.05" y="-2.7" dx="1.5" dy="1.55" layer="1"/>
+<smd name="P$11" x="3.05" y="-2.7" dx="1.5" dy="1.55" layer="1"/>
+<pad name="P$12" x="-3.6" y="-2.7" drill="1.1" diameter="1.6" rot="R270"/>
+<pad name="P$13" x="3.6" y="-2.7" drill="1.1" diameter="1.6" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="OCTA-CORE_USB-MICRO2">
+<wire x1="5.08" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="17.78" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<pin name="P$1" x="-5.08" y="12.7" visible="pad" length="middle"/>
+<pin name="P$2" x="-5.08" y="10.16" visible="pad" length="middle"/>
+<pin name="P$3" x="-5.08" y="7.62" visible="pad" length="middle"/>
+<pin name="P$4" x="-5.08" y="5.08" visible="pad" length="middle"/>
+<pin name="P$5" x="-5.08" y="2.54" visible="pad" length="middle"/>
+<pin name="P$6" x="-2.54" y="-7.62" visible="off" length="middle"/>
+<pin name="P$7" x="-2.54" y="-10.16" visible="off" length="middle"/>
+<text x="2.54" y="-7.62" size="1.778" layer="94">GND</text>
+<text x="2.54" y="-10.16" size="1.778" layer="94">GND</text>
+<text x="0" y="2.54" size="1.778" layer="94">GND</text>
+<text x="0" y="5.08" size="1.778" layer="94">ID</text>
+<text x="0" y="7.62" size="1.778" layer="94">D+</text>
+<text x="0" y="10.16" size="1.778" layer="94">D-</text>
+<text x="0" y="12.7" size="1.778" layer="94">VCC</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OCTA-CORE_MCIRO-USB2">
+<description>Micr MICRO USB TYPE B RCPT W/ REAR PEGS. Mouser: 649-10118194-0001LF</description>
+<gates>
+<gate name="G$1" symbol="OCTA-CORE_USB-MICRO2" x="2.54" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="OCTA-CORE_MICRO-USB2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6 P$7 P$12 P$13"/>
+<connect gate="G$1" pin="P$7" pad="P$8 P$9 P$10 P$11"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="MOUSER"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="Fri3d Camp Badge"/>
@@ -8120,7 +8026,7 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED5" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED5" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="LED"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
@@ -8141,12 +8047,12 @@ by exp-lbrs.ulp</description>
 <part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 4"/>
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49S"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
-<part name="K1" library="Input-Output_Connectors_rev15d" deviceset="65100516121" device=""/>
 <part name="U$2" library="GeekAmmo" deviceset="HEADER-06X1?" device="-MALE"/>
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="-SMD-A"/>
 <part name="U$4" library="Badge_EZR_V1" deviceset="DRAGAN-PERSONAL_AVAGO-RGB-LED" device=""/>
+<part name="U$5" library="OCTA-EZR_v1" deviceset="OCTA-CORE_MCIRO-USB2" device="" technology="MOUSER"/>
 </parts>
 <sheets>
 <sheet>
@@ -8155,8 +8061,8 @@ by exp-lbrs.ulp</description>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-45.72" y="-7.62"/>
 <instance part="U$1" gate="G$1" x="88.9" y="109.22"/>
-<instance part="R1" gate="G$1" x="7.62" y="139.7"/>
-<instance part="R2" gate="G$1" x="7.62" y="132.08"/>
+<instance part="R1" gate="G$1" x="7.62" y="137.16"/>
+<instance part="R2" gate="G$1" x="7.62" y="129.54"/>
 <instance part="GND1" gate="1" x="-7.62" y="142.24"/>
 <instance part="U1" gate="G$1" x="0" y="96.52"/>
 <instance part="GND2" gate="1" x="12.7" y="83.82"/>
@@ -8210,12 +8116,12 @@ by exp-lbrs.ulp</description>
 <instance part="LED4" gate="G$1" x="205.74" y="25.4" rot="R270"/>
 <instance part="Q2" gate="G$1" x="63.5" y="96.52" rot="R90"/>
 <instance part="J3" gate="G$1" x="-30.48" y="63.5"/>
-<instance part="K1" gate="G$1" x="-22.86" y="134.62" rot="R180"/>
 <instance part="U$2" gate="G$1" x="20.32" y="35.56"/>
 <instance part="R18" gate="G$1" x="167.64" y="147.32" rot="R270"/>
 <instance part="GND10" gate="1" x="167.64" y="139.7"/>
 <instance part="S2" gate="1" x="-7.62" y="66.04"/>
 <instance part="U$4" gate="G$1" x="213.36" y="114.3" rot="R180"/>
+<instance part="U$5" gate="G$1" x="-25.4" y="137.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8313,18 +8219,19 @@ by exp-lbrs.ulp</description>
 <wire x1="152.4" y1="71.12" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="K1" gate="G$1" pin="5GND"/>
-<wire x1="-15.24" y1="139.7" x2="-15.24" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="144.78" x2="-15.24" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="147.32" x2="-7.62" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-7.62" y1="147.32" x2="-7.62" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="GND@1"/>
-<wire x1="-17.78" y1="144.78" x2="-15.24" y2="144.78" width="0.1524" layer="91"/>
-<junction x="-15.24" y="144.78"/>
-<pinref part="K1" gate="G$1" pin="GND@2"/>
-<wire x1="-17.78" y1="147.32" x2="-15.24" y2="147.32" width="0.1524" layer="91"/>
 <junction x="-15.24" y="147.32"/>
+<pinref part="U$5" gate="G$1" pin="P$7"/>
+<wire x1="-22.86" y1="147.32" x2="-15.24" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$6"/>
+<wire x1="-22.86" y1="144.78" x2="-15.24" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$5"/>
+<wire x1="-20.32" y1="134.62" x2="-15.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="134.62" x2="-15.24" y2="144.78" width="0.1524" layer="91"/>
+<junction x="-15.24" y="144.78"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -8334,8 +8241,8 @@ by exp-lbrs.ulp</description>
 <net name="D+" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
-<label x="17.78" y="139.7" size="1.778" layer="95"/>
+<wire x1="12.7" y1="137.16" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
+<label x="17.78" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D+"/>
@@ -8347,8 +8254,8 @@ by exp-lbrs.ulp</description>
 <net name="D-" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="132.08" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
-<label x="17.78" y="132.08" size="1.778" layer="95"/>
+<wire x1="12.7" y1="129.54" x2="20.32" y2="129.54" width="0.1524" layer="91"/>
+<label x="17.78" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D-"/>
@@ -8379,11 +8286,9 @@ by exp-lbrs.ulp</description>
 <wire x1="71.12" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="0" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
 <label x="10.16" y="124.46" size="1.778" layer="95"/>
-<wire x1="0" y1="124.46" x2="0" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="1VCC"/>
-<wire x1="-15.24" y1="129.54" x2="0" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="-20.32" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -8746,22 +8651,6 @@ by exp-lbrs.ulp</description>
 <wire x1="200.66" y1="25.4" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="K1" gate="G$1" pin="2D-"/>
-<wire x1="2.54" y1="132.08" x2="-15.24" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="139.7" x2="0" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="0" y1="139.7" x2="0" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="3D+"/>
-<wire x1="0" y1="134.62" x2="-15.24" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="A0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PF7(ADC7)"/>
@@ -8861,6 +8750,24 @@ by exp-lbrs.ulp</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
 <wire x1="187.96" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="129.54" x2="0" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="0" y1="129.54" x2="0" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="0" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="137.16" x2="-2.54" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="137.16" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$3"/>
+<wire x1="-2.54" y1="129.54" x2="-20.32" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
