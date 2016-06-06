@@ -18,6 +18,7 @@ UsedLibrary="/Applications/EAGLE-7.5.0/lbr/74xx-little-de.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/74xx-little-us.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/74xx-us.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/751xx.lbr"
+UsedLibrary="/Applications/EAGLE-7.5.0/lbr/Badge_EZR_V1.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/IQD-Frequency-Products.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/advanced-test-technologies.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/agilent-technologies.lbr"
@@ -379,9 +380,9 @@ UsedLibrary="/Users/xtof/Workspace/Eagle-Libraries/varistor.lbr"
 Type="Board Editor"
 Loc="0 -22 599 377"
 State=1
-Number=1
+Number=2
 File="fri3d_badge_2016.brd"
-View="46.8185 20.6682 67.7123 38.9635"
+View="2.85736 0.117084 78.1599 66.1617"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -419,21 +420,21 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=16
+Layer=1
 
 [Win_2]
 Type="Control Panel"
-Loc="152 149 1152 932"
-State=2
+Loc="0 -22 599 377"
+State=1
 Number=0
 
 [Win_3]
 Type="Schematic Editor"
 Loc="0 -22 599 377"
 State=1
-Number=2
+Number=1
 File="fri3d_badge_2016.sch"
-View="-76.4474 -15.0563 228.105 187.737"
+View="-47.0341 -6.66513 221.061 171.852"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -472,7 +473,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -76.4474 -15.0563 228.105 187.737"
+Views=" 1: -47.0341 -6.66513 221.061 171.852"
 Sheet="1"
 
 [Desktop]

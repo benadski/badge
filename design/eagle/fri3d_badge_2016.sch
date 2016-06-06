@@ -3387,199 +3387,6 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-LED">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find discrete LEDs for illumination or indication, but no displays.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="P-LCC-4-3">
-<description>&lt;h3&gt;Everlight Red/Green/Blue LED&lt;/h3&gt;
-67-23/R6GHBHC-B01/2T &lt;b&gt;||&lt;/b&gt; 67-23/R6GHBH-B01</description>
-<wire x1="-1.4" y1="-1.75" x2="1.4" y2="-1.75" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="-1.75" x2="1.4" y2="1.75" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="1.75" x2="-1.4" y2="1.75" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="1.75" x2="-1.4" y2="-1.75" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.1" width="0.2032" layer="51"/>
-<smd name="2" x="-0.725" y="1.7" dx="0.75" dy="1.8" layer="1"/>
-<smd name="1" x="0.725" y="1.7" dx="0.75" dy="1.8" layer="1"/>
-<smd name="4" x="0.725" y="-1.7" dx="0.75" dy="1.8" layer="1"/>
-<smd name="3" x="-0.725" y="-1.7" dx="0.75" dy="1.8" layer="1"/>
-<text x="2.9438" y="-2.4534" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.427" y="-2.4518" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<wire x1="-1.4" y1="0.508" x2="-1.4" y2="-0.508" width="0.2032" layer="21"/>
-<wire x1="-0.1016" y1="1.75" x2="0.1016" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.508" x2="1.4" y2="-0.508" width="0.2032" layer="21"/>
-<wire x1="-0.1016" y1="-1.75" x2="0.1016" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="1.3598" y1="1.1662" x2="0.8098" y2="1.7162" width="0.2032" layer="51"/>
-<polygon width="0.127" layer="21">
-<vertex x="0" y="0"/>
-<vertex x="0.5588" y="0" curve="90"/>
-<vertex x="0" y="0.5588"/>
-</polygon>
-<circle x="0" y="0" radius="0.55764375" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LED-RGB">
-<description>67-23/R6GHBHC-B01/2T</description>
-<wire x1="6.35" y1="1.778" x2="5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-0.254" x2="3.81" y2="1.778" width="0.254" layer="94"/>
-<wire x1="6.35" y1="-0.254" x2="5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-0.254" x2="3.81" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="6.35" y1="1.778" x2="3.81" y2="1.778" width="0.254" layer="94"/>
-<wire x1="3.048" y1="1.524" x2="2.159" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.762" x2="2.921" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.254" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.254" x2="-1.27" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.778" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="1.524" x2="-2.921" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.762" x2="-2.159" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="1.778" x2="-5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-0.254" x2="-6.35" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-0.254" x2="-5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-0.254" x2="-6.35" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.778" x2="-6.35" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-7.112" y1="1.524" x2="-8.001" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-6.35" y1="0.762" x2="-7.239" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<circle x="-5.08" y="2.54" radius="0.1796" width="0.254" layer="94"/>
-<circle x="0" y="2.54" radius="0.1796" width="0.254" layer="94"/>
-<text x="-2.54" y="3.302" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="5.461" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="RED" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="GREEN" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="BLUE" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="ANODE" x="-5.08" y="5.08" visible="off" length="middle" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="2.032" y="1.016"/>
-<vertex x="1.778" y="0.254"/>
-<vertex x="2.54" y="0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="2.794" y="0.254"/>
-<vertex x="2.54" y="-0.508"/>
-<vertex x="3.302" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.048" y="1.016"/>
-<vertex x="-3.302" y="0.254"/>
-<vertex x="-2.54" y="0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-2.286" y="0.254"/>
-<vertex x="-2.54" y="-0.508"/>
-<vertex x="-1.778" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-8.128" y="1.016"/>
-<vertex x="-8.382" y="0.254"/>
-<vertex x="-7.62" y="0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-7.366" y="0.254"/>
-<vertex x="-7.62" y="-0.508"/>
-<vertex x="-6.858" y="-0.254"/>
-</polygon>
-<text x="-7.747" y="-0.762" size="0.8128" layer="96" font="vector" rot="R270">BLUE</text>
-<text x="-2.667" y="-0.762" size="0.8128" layer="96" font="vector" rot="R270">GREEN</text>
-<text x="2.413" y="-0.762" size="0.8128" layer="96" font="vector" rot="R270">RED</text>
-<text x="-5.461" y="2.794" size="0.8128" layer="96" font="vector" rot="R90">CA</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0.13_RGB_LED" prefix="D" uservalue="yes">
-<description>&lt;h3&gt;Everlight Red/Green/Blue LED&lt;/h3&gt;
-67-23/R6GHBHC-B01/2T &lt;b&gt;||&lt;/b&gt; 67-23/R6GHBH-B01&lt;br /&gt;
-&lt;table width="100%"&gt;
-				&lt;tbody&gt;
-					&lt;tr&gt;
-						&lt;td width="50%"&gt;&lt;strong&gt;Size&lt;/strong&gt;&lt;/td&gt;
-						&lt;td&gt;3.2*2.8*1.9mm&lt;/td&gt;
-					&lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Mounting Type&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;SMD Full-Color LED PLCC4&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Emitting Color&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;Red/Green/Blue (620-625/530-535/470-475 nm)&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Chip Material&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;AlGaInP/InGaN/InGaN&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Luminous Intensity&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;57-112/225-450/36-72 mcd&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Viewing Angle&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;120 deg&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Lens Type-Color&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;Water Clear&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Forward Voltage&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;2.0/3.5/3.5 V&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Forward Current&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;10 mA&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Maximum Forward Voltage&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;2.4/3.9/3.9 V&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Maximum Forward Current&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;25/25/25 mA&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Min-Max Operating Temperature&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt; -40C to +85C&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Factory Pack&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;2000 pcs-Reel&lt;/td&gt;
-                                        &lt;/tr&gt;
-					&lt;tr&gt;
-						&lt;td&gt;&lt;strong&gt;RoHS&lt;/strong&gt;&lt;/td&gt;
-						&lt;td&gt;✓&lt;/td&gt;
-					&lt;/tr&gt;
-				&lt;/tbody&gt;
-				&lt;/table&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED-RGB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PLCC" package="P-LCC-4-3">
-<connects>
-<connect gate="G$1" pin="ANODE" pad="4"/>
-<connect gate="G$1" pin="BLUE" pad="3"/>
-<connect gate="G$1" pin="GREEN" pad="2"/>
-<connect gate="G$1" pin="RED" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-12986"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="tsop">
 <description>IR Receiver and Demodulator</description>
 <packages>
@@ -8154,6 +7961,116 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="Badge_EZR_V1">
+<description>Generated from &lt;b&gt;Badge_EZR_V1.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="DRAGAN-PERSONAL_AVAGO-RGB-LED">
+<wire x1="-1" y1="-1.1" x2="-1" y2="4" width="0.127" layer="21"/>
+<wire x1="-1" y1="4" x2="2.5" y2="4" width="0.127" layer="21"/>
+<wire x1="2.5" y1="4" x2="2.5" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.1" x2="-1" y2="-1.1" width="0.127" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="1.1" dy="1.5" layer="1"/>
+<smd name="P$2" x="0" y="3" dx="1.1" dy="1.5" layer="1"/>
+<smd name="P$3" x="1.5" y="3" dx="1.1" dy="1.5" layer="1"/>
+<smd name="P$4" x="1.5" y="0" dx="1.1" dy="1.5" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DRAGAN-PERSONAL_AVAGO-RGB-LED">
+<wire x1="15.2" y1="10.2" x2="10.42" y2="10.2" width="0.254" layer="94"/>
+<wire x1="10.42" y1="12.7" x2="10.42" y2="10.2" width="0.254" layer="94"/>
+<wire x1="10.42" y1="10.2" x2="10.42" y2="7.7" width="0.254" layer="94"/>
+<wire x1="10.42" y1="10.2" x2="7.92" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.92" y1="12.7" x2="7.92" y2="10.2" width="0.254" layer="94"/>
+<wire x1="7.92" y1="10.2" x2="7.92" y2="7.7" width="0.254" layer="94"/>
+<wire x1="7.92" y1="7.7" x2="10.42" y2="10.2" width="0.254" layer="94"/>
+<wire x1="7.92" y1="10.2" x2="3.42" y2="10.2" width="0.254" layer="94"/>
+<wire x1="9.22" y1="12.2" x2="9.62" y2="12.6" width="0.254" layer="94"/>
+<wire x1="9.62" y1="12.6" x2="9.32" y2="12.9" width="0.254" layer="94"/>
+<wire x1="9.32" y1="12.9" x2="10.12" y2="13.1" width="0.254" layer="94"/>
+<wire x1="10.12" y1="13.1" x2="9.92" y2="12.3" width="0.254" layer="94"/>
+<wire x1="9.92" y1="12.3" x2="9.62" y2="12.6" width="0.254" layer="94"/>
+<wire x1="8.32" y1="12.9" x2="8.82" y2="13.4" width="0.254" layer="94"/>
+<wire x1="8.82" y1="13.4" x2="8.52" y2="13.7" width="0.254" layer="94"/>
+<wire x1="8.52" y1="13.7" x2="9.32" y2="13.9" width="0.254" layer="94"/>
+<wire x1="9.32" y1="13.9" x2="9.12" y2="13.1" width="0.254" layer="94"/>
+<wire x1="9.12" y1="13.1" x2="8.82" y2="13.4" width="0.254" layer="94"/>
+<wire x1="14.32" y1="0.04" x2="10.32" y2="0.04" width="0.254" layer="94"/>
+<wire x1="10.32" y1="2.54" x2="10.32" y2="0.04" width="0.254" layer="94"/>
+<wire x1="10.32" y1="0.04" x2="10.32" y2="-2.46" width="0.254" layer="94"/>
+<wire x1="10.32" y1="0.04" x2="7.82" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.82" y1="2.54" x2="7.82" y2="0.04" width="0.254" layer="94"/>
+<wire x1="7.82" y1="0.04" x2="7.82" y2="-2.46" width="0.254" layer="94"/>
+<wire x1="7.82" y1="-2.46" x2="10.32" y2="0.04" width="0.254" layer="94"/>
+<wire x1="7.82" y1="0.04" x2="3.39" y2="0.04" width="0.254" layer="94"/>
+<wire x1="3.39" y1="0.04" x2="3.32" y2="0.04" width="0.254" layer="94"/>
+<wire x1="9.12" y1="2.04" x2="9.52" y2="2.44" width="0.254" layer="94"/>
+<wire x1="9.52" y1="2.44" x2="9.22" y2="2.74" width="0.254" layer="94"/>
+<wire x1="9.22" y1="2.74" x2="10.02" y2="2.94" width="0.254" layer="94"/>
+<wire x1="10.02" y1="2.94" x2="9.82" y2="2.14" width="0.254" layer="94"/>
+<wire x1="9.82" y1="2.14" x2="9.52" y2="2.44" width="0.254" layer="94"/>
+<wire x1="8.22" y1="2.74" x2="8.72" y2="3.24" width="0.254" layer="94"/>
+<wire x1="8.72" y1="3.24" x2="8.42" y2="3.54" width="0.254" layer="94"/>
+<wire x1="8.42" y1="3.54" x2="9.22" y2="3.74" width="0.254" layer="94"/>
+<wire x1="9.22" y1="3.74" x2="9.02" y2="2.94" width="0.254" layer="94"/>
+<wire x1="9.02" y1="2.94" x2="8.72" y2="3.24" width="0.254" layer="94"/>
+<wire x1="14.32" y1="-10.12" x2="10.32" y2="-10.12" width="0.254" layer="94"/>
+<wire x1="10.32" y1="-7.62" x2="10.32" y2="-10.12" width="0.254" layer="94"/>
+<wire x1="10.32" y1="-10.12" x2="10.32" y2="-12.62" width="0.254" layer="94"/>
+<wire x1="10.32" y1="-10.12" x2="7.82" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.82" y1="-7.62" x2="7.82" y2="-10.12" width="0.254" layer="94"/>
+<wire x1="7.82" y1="-10.12" x2="7.82" y2="-12.62" width="0.254" layer="94"/>
+<wire x1="7.82" y1="-12.62" x2="10.32" y2="-10.12" width="0.254" layer="94"/>
+<wire x1="7.82" y1="-10.12" x2="2.91" y2="-10.12" width="0.254" layer="94"/>
+<wire x1="9.12" y1="-8.12" x2="9.52" y2="-7.72" width="0.254" layer="94"/>
+<wire x1="9.52" y1="-7.72" x2="9.22" y2="-7.42" width="0.254" layer="94"/>
+<wire x1="9.22" y1="-7.42" x2="10.02" y2="-7.22" width="0.254" layer="94"/>
+<wire x1="10.02" y1="-7.22" x2="9.82" y2="-8.02" width="0.254" layer="94"/>
+<wire x1="9.82" y1="-8.02" x2="9.52" y2="-7.72" width="0.254" layer="94"/>
+<wire x1="8.22" y1="-7.42" x2="8.72" y2="-6.92" width="0.254" layer="94"/>
+<wire x1="8.72" y1="-6.92" x2="8.42" y2="-6.62" width="0.254" layer="94"/>
+<wire x1="8.42" y1="-6.62" x2="9.22" y2="-6.42" width="0.254" layer="94"/>
+<wire x1="9.22" y1="-6.42" x2="9.02" y2="-7.22" width="0.254" layer="94"/>
+<wire x1="9.02" y1="-7.22" x2="8.72" y2="-6.92" width="0.254" layer="94"/>
+<wire x1="14.35" y1="0.03" x2="15.2" y2="0.03" width="0.254" layer="94"/>
+<wire x1="14.39" y1="-10.12" x2="15.19" y2="-10.12" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.9" y2="0" width="0.254" layer="94"/>
+<wire x1="2.9" y1="0" x2="3.39" y2="0.04" width="0.254" layer="94"/>
+<wire x1="3.4" y1="10.2" x2="2.93" y2="10.2" width="0.254" layer="94"/>
+<wire x1="2.93" y1="10.2" x2="2.93" y2="0.08" width="0.254" layer="94"/>
+<wire x1="2.9" y1="0" x2="2.91" y2="-10.12" width="0.254" layer="94"/>
+<pin name="P$1" x="-5.08" y="0" visible="pad" length="middle"/>
+<pin name="P$2" x="20.32" y="10.16" visible="pad" length="middle" rot="R180"/>
+<pin name="P$3" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="P$4" x="20.32" y="-10.16" visible="pad" length="middle" rot="R180"/>
+<text x="10.8" y="10.5" size="1.27" layer="94">Blue</text>
+<text x="10.6" y="0.3" size="1.27" layer="94">Green</text>
+<text x="10.6" y="-9.8" size="1.27" layer="94">Red</text>
+<text x="-1.3" y="0.2" size="0.6096" layer="94">Anode'</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DRAGAN-PERSONAL_AVAGO-RGB-LED">
+<gates>
+<gate name="G$1" symbol="DRAGAN-PERSONAL_AVAGO-RGB-LED" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRAGAN-PERSONAL_AVAGO-RGB-LED">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="Fri3d Camp Badge"/>
@@ -8191,7 +8108,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="18pF"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="D2" library="SparkFun-LED" deviceset="0.13_RGB_LED" device="PLCC"/>
 <part name="ICSP" library="SparkFun-Connectors" deviceset="PINHD-2X3" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -8219,10 +8135,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 1"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 2"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 3"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 4"/>
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49S"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
 <part name="K1" library="Input-Output_Connectors_rev15d" deviceset="65100516121" device=""/>
@@ -8230,6 +8146,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="-SMD-A"/>
+<part name="U$4" library="Badge_EZR_V1" deviceset="DRAGAN-PERSONAL_AVAGO-RGB-LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8260,14 +8177,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C6" gate="G$1" x="55.88" y="93.98" rot="R90"/>
 <instance part="GND8" gate="1" x="45.72" y="96.52" rot="R270"/>
 <instance part="S1" gate="G$1" x="185.42" y="160.02" rot="R180"/>
-<instance part="D2" gate="G$1" x="198.12" y="116.84" rot="R270"/>
 <instance part="ICSP" gate="A" x="-17.78" y="35.56"/>
 <instance part="GND9" gate="1" x="152.4" y="60.96"/>
 <instance part="SUPPLY4" gate="G$1" x="213.36" y="73.66"/>
 <instance part="SUPPLY5" gate="G$1" x="215.9" y="160.02"/>
-<instance part="R7" gate="G$1" x="182.88" y="124.46"/>
-<instance part="R8" gate="G$1" x="182.88" y="116.84"/>
-<instance part="SUPPLY6" gate="G$1" x="208.28" y="129.54"/>
+<instance part="R7" gate="G$1" x="182.88" y="104.14"/>
+<instance part="R8" gate="G$1" x="182.88" y="114.3"/>
+<instance part="SUPPLY6" gate="G$1" x="220.98" y="127"/>
 <instance part="GND17" gate="1" x="104.14" y="20.32"/>
 <instance part="U$3" gate="G$1" x="71.12" y="27.94"/>
 <instance part="SUPPLY7" gate="G$1" x="104.14" y="33.02"/>
@@ -8285,9 +8201,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R5" gate="G$1" x="205.74" y="154.94"/>
 <instance part="R6" gate="G$1" x="86.36" y="33.02"/>
 <instance part="R11" gate="G$1" x="86.36" y="43.18"/>
-<instance part="R9" gate="G$1" x="187.96" y="104.14" rot="R90"/>
-<instance part="R16" gate="G$1" x="182.88" y="99.06"/>
-<instance part="R17" gate="G$1" x="177.8" y="104.14" rot="R270"/>
+<instance part="R9" gate="G$1" x="187.96" y="129.54" rot="R270"/>
+<instance part="R16" gate="G$1" x="182.88" y="134.62"/>
+<instance part="R17" gate="G$1" x="177.8" y="129.54" rot="R90"/>
 <instance part="LED1" gate="G$1" x="205.74" y="71.12" rot="R270"/>
 <instance part="LED2" gate="G$1" x="205.74" y="55.88" rot="R270"/>
 <instance part="LED3" gate="G$1" x="205.74" y="40.64" rot="R270"/>
@@ -8299,6 +8215,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R18" gate="G$1" x="167.64" y="147.32" rot="R270"/>
 <instance part="GND10" gate="1" x="167.64" y="139.7"/>
 <instance part="S2" gate="1" x="-7.62" y="66.04"/>
+<instance part="U$4" gate="G$1" x="213.36" y="114.3" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8520,12 +8437,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="213.36" y="71.12"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="ANODE"/>
-<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
-<wire x1="208.28" y1="129.54" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 <wire x1="104.14" y1="33.02" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -8552,6 +8463,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="S2" gate="1" pin="S"/>
 <wire x1="-2.54" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+<wire x1="218.44" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="114.3" x2="220.98" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8630,27 +8547,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="132.08" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="D2" gate="G$1" pin="BLUE"/>
-<wire x1="187.96" y1="124.46" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="RED"/>
-<wire x1="187.96" y1="111.76" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="109.22" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RGB_BLUE" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
-<label x="160.02" y="124.46" size="1.778" layer="95"/>
+<wire x1="177.8" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
+<label x="160.02" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB5(ADC12)"/>
@@ -8661,8 +8562,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="RGB_GREEN" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<label x="160.02" y="116.84" size="1.778" layer="95"/>
+<wire x1="177.8" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="160.02" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB6(ADC13)"/>
@@ -8672,21 +8573,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="RGB_RED" class="0">
 <segment>
-<wire x1="177.8" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
-<label x="160.02" y="109.22" size="1.778" layer="95"/>
+<wire x1="177.8" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
+<label x="160.02" y="124.46" size="1.778" layer="95"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PC6"/>
 <wire x1="106.68" y1="109.22" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
 <label x="132.08" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="D2" gate="G$1" pin="GREEN"/>
-<wire x1="187.96" y1="116.84" x2="195.58" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IR_RX" class="0">
@@ -8946,6 +8840,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="S2" gate="1" pin="P"/>
 <wire x1="-22.86" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="P$3"/>
+<wire x1="187.96" y1="114.3" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="P$4"/>
+<wire x1="187.96" y1="124.46" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<wire x1="187.96" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
