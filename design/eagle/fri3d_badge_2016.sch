@@ -7542,11 +7542,11 @@ by exp-lbrs.ulp</description>
 <pin name="P$5" x="20.32" y="7.62" visible="pad" length="middle" rot="R180"/>
 <pin name="P$6" x="20.32" y="12.7" visible="pad" length="middle" rot="R180"/>
 <text x="-1.54" y="12.7" size="1.27" layer="94">MISO</text>
-<text x="-1.54" y="7.62" size="1.27" layer="94">VCC</text>
-<text x="-1.54" y="2.54" size="1.27" layer="94">SCK</text>
-<text x="10.652" y="12.7" size="1.27" layer="94">GND</text>
-<text x="11.184" y="7.62" size="1.27" layer="94">RST</text>
-<text x="10.144" y="2.54" size="1.27" layer="94">MOSI</text>
+<text x="-1.54" y="7.62" size="1.27" layer="94">SCK</text>
+<text x="-1.54" y="2.54" size="1.27" layer="94">RST</text>
+<text x="10.652" y="12.7" size="1.27" layer="94">VCC</text>
+<text x="10.168" y="7.62" size="1.27" layer="94">MOSI</text>
+<text x="10.144" y="2.54" size="1.27" layer="94">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7576,11 +7576,11 @@ by exp-lbrs.ulp</description>
 <device name="" package="OCTA-CORE_TC2030-IDC">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$6"/>
-<connect gate="G$1" pin="P$3" pad="P$2"/>
-<connect gate="G$1" pin="P$4" pad="P$5"/>
-<connect gate="G$1" pin="P$5" pad="P$3"/>
-<connect gate="G$1" pin="P$6" pad="P$4"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7845,9 +7845,9 @@ by exp-lbrs.ulp</description>
 <instance part="U$4" gate="G$1" x="213.36" y="114.3" rot="R180"/>
 <instance part="U$5" gate="G$1" x="-25.4" y="137.16" rot="R180"/>
 <instance part="U$6" gate="G$1" x="-2.54" y="66.04"/>
-<instance part="U$7" gate="G$1" x="0" y="33.02" rot="R180"/>
-<instance part="GND11" gate="1" x="-27.94" y="15.24"/>
-<instance part="SUPPLY3" gate="G$1" x="20.32" y="33.02"/>
+<instance part="U$7" gate="G$1" x="-15.24" y="20.32"/>
+<instance part="GND11" gate="1" x="10.16" y="12.7"/>
+<instance part="SUPPLY3" gate="G$1" x="10.16" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -7958,10 +7958,10 @@ by exp-lbrs.ulp</description>
 <pinref part="R18" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$6"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="-20.32" y1="20.32" x2="-27.94" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="20.32" x2="-27.94" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="P$4"/>
+<wire x1="5.08" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -8097,10 +8097,10 @@ by exp-lbrs.ulp</description>
 <wire x1="220.98" y1="114.3" x2="220.98" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$2"/>
+<pinref part="U$7" gate="G$1" pin="P$6"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-<wire x1="7.62" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8234,9 +8234,9 @@ by exp-lbrs.ulp</description>
 <label x="137.16" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$4"/>
-<wire x1="-20.32" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
-<label x="-27.94" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$7" gate="G$1" pin="P$5"/>
+<wire x1="5.08" y1="27.94" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<label x="12.7" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -8250,9 +8250,9 @@ by exp-lbrs.ulp</description>
 <label x="66.04" y="149.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$5"/>
-<wire x1="-20.32" y1="25.4" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
-<label x="-27.94" y="25.4" size="1.778" layer="95"/>
+<pinref part="U$7" gate="G$1" pin="P$3"/>
+<wire x1="-22.86" y1="22.86" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
+<label x="-35.56" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -8262,9 +8262,9 @@ by exp-lbrs.ulp</description>
 <label x="137.16" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$3"/>
-<wire x1="7.62" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<label x="12.7" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$7" gate="G$1" pin="P$2"/>
+<wire x1="-22.86" y1="27.94" x2="-35.56" y2="27.94" width="0.1524" layer="91"/>
+<label x="-35.56" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -8275,8 +8275,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="P$1"/>
-<wire x1="7.62" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
-<label x="12.7" y="20.32" size="1.778" layer="95"/>
+<wire x1="-22.86" y1="33.02" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
+<label x="-35.56" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
