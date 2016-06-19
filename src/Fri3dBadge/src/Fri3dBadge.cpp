@@ -7,7 +7,7 @@
 #define blue_pin     9
 
 // Button
-#define button_pin  12
+#define button_pin  0
 
 Fri3dBadge::Fri3dBadge() {
   // prepare RGB LED pin
