@@ -14,6 +14,8 @@ Fri3dBadge::Fri3dBadge() {
   pinMode(red_pin,   OUTPUT);
   pinMode(green_pin, OUTPUT);
   pinMode(blue_pin,  OUTPUT);
+  // initialize to black
+  this->rgb_set_color(0, 0, 0);
   
   // prepare button pin
   pinMode(button_pin, INPUT);
