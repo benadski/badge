@@ -45,6 +45,51 @@ void Fri3dBadge::sleep() {
   delay(100);
 }
 
+void Fri3dBadge::sleep_for(uint8_t sec) {
+  // compute actual sleep time (aka prescaler) and remainder
+  uint8_t prescaler = 0,
+          left      = 0;
+  if(sec >= 8) {
+    prescaler = (1<<WDP3)                        | (1<<WDP0);
+    left      = sec - 8;
+  } else if(sec >= 4) {
+    prescaler = (1<<WDP3);
+    left      = sec - 4;
+  } else if(sec >= 2) {
+    prescaler =            (1<<WDP2) | (1<<WDP1) | (1<<WDP0);
+    left      = sec - 2;
+  } else {
+    prescaler =            (1<<WDP2) | (1<<WDP1);
+    left      = sec - 1;
+  }
+
+  // don't reset, we just use it as an interrupt when sleeping deeply
+  MCUSR &= ~(1<<WDRF);
+
+  // to change WDE or the prescaler, we need to set WDCE
+  // WDCE: Watchdog Change Enable
+  // WDE: Watchdog System Reset Enable
+  WDTCSR |= (1<<WDCE) | (1<<WDE);
+
+  // set new watchdog timeout prescaler value
+  // resets all other bits
+  WDTCSR = prescaler;
+
+  // only enable the interrupt
+  WDTCSR |= (1<<WDIE);
+
+  this->sleep();
+
+  // disable the interrupt
+  WDTCSR &= ~(1<<WDIE);
+
+  // recurse until no sleep time is left
+  if(left) { this->sleep_for(left); }
+}
+
+// watchdog interrupt is just used to get out of power down sleep
+ISR(WDT_vect) {}
+
 void Fri3dBadge::rgb_set_color(uint8_t red, uint8_t green, uint8_t blue) {
   analogWrite(red_pin,   255 - red);
   analogWrite(green_pin, 255 - green);
