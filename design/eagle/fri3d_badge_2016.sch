@@ -7781,7 +7781,7 @@ by exp-lbrs.ulp</description>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="Fri3d Camp Badge"/>
-<attribute name="CREVISION" value="0"/>
+<attribute name="CREVISION" value="4"/>
 <attribute name="DESIGNER" value="Christophe VG"/>
 </attributes>
 <variantdefs>
@@ -7838,10 +7838,10 @@ by exp-lbrs.ulp</description>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 1"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 2"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 3"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805" value="IR LED 4"/>
+<part name="IRLED1" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="IRLED2" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="IRLED3" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="IRLED4" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="XTAL" library="crystal" deviceset="CRYSTAL" device="HC49S"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2"/>
 <part name="U$2" library="GeekAmmo" deviceset="HEADER-06X1?" device="-MALE"/>
@@ -7912,10 +7912,10 @@ by exp-lbrs.ulp</description>
 <instance part="R9" gate="G$1" x="187.96" y="129.54" rot="R270"/>
 <instance part="R16" gate="G$1" x="182.88" y="134.62"/>
 <instance part="R17" gate="G$1" x="177.8" y="129.54" rot="R90"/>
-<instance part="LED1" gate="G$1" x="205.74" y="71.12" rot="R270"/>
-<instance part="LED2" gate="G$1" x="205.74" y="55.88" rot="R270"/>
-<instance part="LED3" gate="G$1" x="205.74" y="40.64" rot="R270"/>
-<instance part="LED4" gate="G$1" x="205.74" y="25.4" rot="R270"/>
+<instance part="IRLED1" gate="G$1" x="205.74" y="71.12" rot="R270"/>
+<instance part="IRLED2" gate="G$1" x="205.74" y="55.88" rot="R270"/>
+<instance part="IRLED3" gate="G$1" x="205.74" y="40.64" rot="R270"/>
+<instance part="IRLED4" gate="G$1" x="205.74" y="25.4" rot="R270"/>
 <instance part="XTAL" gate="G$1" x="63.5" y="96.52" rot="R90"/>
 <instance part="J3" gate="G$1" x="-30.48" y="63.5"/>
 <instance part="U$2" gate="G$1" x="50.8" y="43.18"/>
@@ -8149,18 +8149,18 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <wire x1="213.36" y1="25.4" x2="213.36" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="IRLED4" gate="G$1" pin="A"/>
 <wire x1="213.36" y1="40.64" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="55.88" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="71.12" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="25.4" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="IRLED3" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="40.64" x2="213.36" y2="40.64" width="0.1524" layer="91"/>
 <junction x="213.36" y="40.64"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="IRLED2" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="55.88" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
 <junction x="213.36" y="55.88"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="IRLED1" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="71.12" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
 <junction x="213.36" y="71.12"/>
 </segment>
@@ -8249,9 +8249,9 @@ by exp-lbrs.ulp</description>
 <wire x1="162.56" y1="83.82" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD0(SCL)"/>
-<wire x1="106.68" y1="114.3" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
-<label x="134.62" y="114.3" size="1.778" layer="95"/>
+<pinref part="MCU" gate="G$1" pin="PC7"/>
+<wire x1="106.68" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="134.62" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON" class="0">
@@ -8470,28 +8470,28 @@ by exp-lbrs.ulp</description>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="IRLED1" gate="G$1" pin="C"/>
 <wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="IRLED2" gate="G$1" pin="C"/>
 <wire x1="200.66" y1="55.88" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="IRLED3" gate="G$1" pin="C"/>
 <wire x1="200.66" y1="40.64" x2="198.12" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="IRLED4" gate="G$1" pin="C"/>
 <wire x1="200.66" y1="25.4" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
