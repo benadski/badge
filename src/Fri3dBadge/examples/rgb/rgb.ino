@@ -3,19 +3,37 @@
 Fri3dBadge badge;
 
 void setup() {}
- 
-void loop() {
-  badge.rgb_set_color(255, 0, 0);     // red
-  delay(1000);
-  badge.rgb_set_color(0, 255, 0);     // green
-  delay(1000);
-  badge.rgb_set_color(0, 0, 255);     // blue
-  delay(1000);
-  badge.rgb_set_color(255, 255, 0);   // yellow
-  delay(1000);  
-  badge.rgb_set_color(80, 0, 80);     // purple
-  delay(1000);
-  badge.rgb_set_color(0, 255, 255);   // aqua
+
+#define RED   0
+#define GREEN 1
+#define BLUE  2
+
+void fade(uint8_t color) {
+  for(int8_t value=0; value<30; value++) {
+    switch(color) {
+      case RED:   badge.rgb_set_color(value,     0,     0); break;
+      case GREEN: badge.rgb_set_color(    0, value,     0); break;
+      case BLUE:  badge.rgb_set_color(    0,     0, 2*value); break;
+    }
+    delay(50);
+  }
+
+  delay(200);
+
+  for(int8_t value=30; value>=0; value--) {
+    switch(color) {
+      case RED:   badge.rgb_set_color(value,     0,     0); break;
+      case GREEN: badge.rgb_set_color(    0, value,     0); break;
+      case BLUE:  badge.rgb_set_color(    0,     0, 2*value); break;
+    }
+    delay(50);
+  }
+
   delay(1000);
 }
 
+void loop() {
+  fade(RED);
+  fade(GREEN);
+  fade(BLUE);
+}
