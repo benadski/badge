@@ -7756,7 +7756,7 @@ by exp-lbrs.ulp</description>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="Fri3d Camp Badge"/>
-<attribute name="CREVISION" value="6"/>
+<attribute name="CREVISION" value="5"/>
 <attribute name="DESIGNER" value="Christophe VG"/>
 </attributes>
 <variantdefs>
