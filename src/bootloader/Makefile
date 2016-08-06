@@ -25,7 +25,7 @@ unlock:
                -U lock:w:$(UNLOCK):m
 
 reset:
-	@echo "!!! please toggle the power of the programmer"
+	@echo "!!! wait for the programmer to become ready"
 	@read -p "    Press any key to continue... " -n1
 
 flash:
