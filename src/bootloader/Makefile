@@ -19,10 +19,10 @@ all: unlock reset flash
 
 unlock:
 	@echo "*** unlocking MCU"
-	@$(PROGRAM) -U efuse:w:$(EFUSE):m \
-	            -U hfuse:w:$(HFUSE):m \
-							-U lfuse:w:$(LFUSE):m \
-							-U lock:w:$(UNLOCK):m
+  -@$(PROGRAM) -U efuse:w:$(EFUSE):m \
+               -U hfuse:w:$(HFUSE):m \
+               -U lfuse:w:$(LFUSE):m \
+               -U lock:w:$(UNLOCK):m
 
 reset:
 	@echo "!!! please toggle the power of the programmer"
@@ -30,6 +30,6 @@ reset:
 
 flash:
 	@echo "*** uploading bootloader"
-	$(PROGRAM) -U flash:w:$(BOOTLOADER) -U lock:w:$(LOCK):m
+	-$(PROGRAM) -U flash:w:$(BOOTLOADER) -U lock:w:$(LOCK):m
 
 .PHONY: all unlock reset flash
