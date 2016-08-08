@@ -19,7 +19,7 @@ all: unlock reset flash
 
 unlock:
 	@echo "*** unlocking MCU"
-  -@$(PROGRAM) -U efuse:w:$(EFUSE):m \
+	-@$(PROGRAM) -U efuse:w:$(EFUSE):m \
                -U hfuse:w:$(HFUSE):m \
                -U lfuse:w:$(LFUSE):m \
                -U lock:w:$(UNLOCK):m
