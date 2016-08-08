@@ -9,7 +9,12 @@
 #define blue_pin     9
 
 // Button
-#define button_pin  0
+#define button_pin   0
+
+// IR
+#define ir_tx_pin   13
+#define ir_rx_pin    1
+#define ir_rx_vcc    4
 
 Fri3dBadge::Fri3dBadge() {
   // prepare RGB LED pin
@@ -21,6 +26,11 @@ Fri3dBadge::Fri3dBadge() {
   
   // prepare button pin
   pinMode(button_pin, INPUT);
+  
+  // prepare IR pin
+  pinMode(ir_tx_pin, OUTPUT);
+  pinMode(ir_rx_pin, INPUT);
+  pinMode(ir_rx_vcc, OUTPUT); // we source the IR receiver to conserve energy
 }
 
 void Fri3dBadge::on_button_change(badge_event_handler_t handler) {
@@ -98,4 +108,59 @@ void Fri3dBadge::rgb_set_color(uint8_t red, uint8_t green, uint8_t blue) {
   
 bool Fri3dBadge::button_is_pressed() {
   return digitalRead(button_pin) == HIGH;
+}
+
+// IR code is based on code from https://learn.adafruit.com/ir-sensor
+
+// we generate a pulse train of ~38KHz
+// 38KHz = 1/38000s = 1000/38us = ~26us/pulse
+void Fri3dBadge::ir_send_pulse(uint32_t duration) {
+	long micros = duration;
+
+  // make sure no interrupts interfere with our pulse
+  cli();
+ 
+  while(micros > 0) {
+    // mark
+    digitalWrite(ir_tx_pin, HIGH); // takes about 3us
+    delayMicroseconds(10);         // takes 10us
+    // space
+    digitalWrite(ir_tx_pin, LOW); 
+    delayMicroseconds(10);
+ 
+    // in total the above code should take 26us
+    // but this doesn't seem to be the case :-(
+    // experiments learn that its closer to 37
+    // to be investigated ;-)
+    micros -= 37;
+  }
+
+  // allow interrupts again
+  sei();
+}
+
+// receiving is interrupt driven, to allow the badge to listen for extended
+// periods of time and notify the application if it is receiving something.
+
+void Fri3dBadge::on_ir_activity(badge_event_handler_t handler) {
+  this->ir_rx_handler = handler;
+}
+
+void Fri3dBadge::ir_rx_start() {
+  digitalWrite(ir_rx_vcc, HIGH);
+	delay(100);
+  if(this->ir_rx_handler != NULL) {
+		Serial.println("installing handler");
+    attachInterrupt(digitalPinToInterrupt(ir_rx_pin), this->ir_rx_handler, RISING);
+  } else {
+    Serial.println("warning: no IR RX handler registered...");
+  }
+}
+
+void Fri3dBadge::ir_rx_stop() {
+  if(this->ir_rx_handler != NULL) {
+		Serial.println("uninstalling handler");
+		detachInterrupt(digitalPinToInterrupt(ir_rx_pin));
+	}
+  digitalWrite(ir_rx_vcc, LOW);
 }
