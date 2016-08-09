@@ -14,7 +14,7 @@ Daarom brengt de badge het Arduino platform samen met infra-rode stralen om een 
 
 Het Arduino platform laat iedereen toe om de software van de badge aan te passen, of er iets totaal anders mee te doen. Naast de badge-functie voor Fri3d Camp, brengen we alle andere mogelijke functionaliteit van de microcontroller naar buiten, zodat de badge, na het kamp, letterlijk kan dienen als jouw eigen Arduino ontwikkel-bord.
 
-Aan de hand van de IR componenten en bijhorende software kunnen de elementaire aspecten van draadloze communicatie uitgelegd worden. Het IR netwerk laat niet alleen communicatie tussen badges toe, maar zal ook de ervaring van het hele kamp _interactief_ maken.
+Aan de hand van de IR componenten en bijhorende software kunnen de elementaire aspecten van draadloze communicatie uitgelegd worden.
 
 ### Meta-Leerzaam
 
@@ -27,7 +27,7 @@ Twee bestaande projecten kunnen beschouwd worden als de spreekwoordelijke ouders
 * [Arduino Pro Micro - 3.3V/8MHz van Sparkfun](https://www.sparkfun.com/products/12587)
 * [TV B Gone van Mitch Altman](https://cornfieldelectronics.com/tvbgone/tvbg.home.php)
 
-Voeg nog een IR receiver en een RGB LED toe en je hebt alle basis componenten voor een leerzamen, interactieve en zeer _hack_-bare Fri3d Camp badge!
+Voeg nog een IR receiver en een RGB LED toe en je hebt alle basis componenten voor een leerzame, interactieve en zeer _hack_-bare Fri3d Camp badge!
 
 ## Software
 
@@ -41,8 +41,8 @@ Je kan dus onmiddellijk aan de slag, zoals met elke andere Arduino. Daarnaast be
 * een implementatie van de TV B Gone applicatie van Mitch Altman
 * ...
 
-Als je zelf een nieuwe app maakt die op de Fri3d Camp badge werkt en op een andere, leuke manier gebruik maakt van het IR netwerk en de RGB LED of van andere componenten die je er zelf aan toegevoegd hebt, bezorg ons dan deze code en we voegen ze toe aan deze repository.
+Als je zelf een nieuwe app maakt die op de Fri3d Camp badge werkt en op een andere, leuke manier gebruik maakt van de IR communicatie en de RGB LED of van andere componenten die je er zelf aan toegevoegd hebt, bezorg ons dan deze code en we voegen ze toe aan deze repository (pull request).
 
 ## Credits
 
-De badge werd ontworpen door Christophe VG, samen met de hele Fri3d Camp organisatie, en uitgewerkt met de hulp van Dragan Subotic, Yannick Verbelen, Maarten Weyn, Willy De a Court, Anthony Liekens,...
+De badge werd ontworpen door Christophe VG, samen met de hele Fri3d Camp organisatie, en uitgewerkt met de hulp van Dragan Subotic, Yannick Verbelen, Maarten Weyn, Willy De a Court, Anthony Liekens, Dries Deroeck, Jef Van Den Broeck, Toon Van de Putte,...
