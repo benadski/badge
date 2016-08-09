@@ -103,7 +103,7 @@ uint32_t next_dialog = 0;
 #define PULSE_LENGTH 500   // us
 
 void loop() {
-  uint32_t now = millis();
+  uint32_t now = millis(); // rollover of ~49.7 days ... not gonna happen ;-)
 
   // start a dialog at INTERVAL
   if( now >= next_dialog ) {
