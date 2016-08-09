@@ -4,8 +4,6 @@
 Fri3dBadge badge;
 
 void setup() {
-  Serial.begin(9600);
-
   // prepare randomness with some random reading from an unconnected analog pin
   randomSeed(analogRead(0));
 	
