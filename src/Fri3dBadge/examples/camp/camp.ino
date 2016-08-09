@@ -96,7 +96,8 @@ void reply_with_party_parrot() {
 // timestamp of next dialog (= send pulse train)
 uint32_t next_dialog = 0;
 
-#define INTERVAL    5000   // start dialog every 5s
+// we take a minimal interval of 5s and add a random part of the same length
+#define INTERVAL    5000 + (random(6) * 1000) // start dialog every 5s + [0-5]s
 
 // a pulse train of x pulses of pulse length y
 #define PULSES        10
@@ -118,7 +119,7 @@ void loop() {
     sending = false;
 
     // schedule the next dialog after interval
-    next_dialog = now + INTERVAL + random(3);
+    next_dialog = now + INTERVAL;
   }
 
   // respond to activity
@@ -127,7 +128,7 @@ void loop() {
     activity_detected = false;
     reply_with_party_parrot();
     skip_activity = SKIP_ACTIVITY;
-    next_dialog = now + INTERVAL + random(3);
+    next_dialog = now + INTERVAL;
   }
 
   // handle new color selection request
@@ -135,7 +136,7 @@ void loop() {
     select_color();
     flash_color();
     select_new_color = false;
-    next_dialog = now + INTERVAL + random(3);
+    next_dialog = now + INTERVAL;
   }
 
   delay(5);
