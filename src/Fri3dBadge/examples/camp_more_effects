@@ -1,0 +1,297 @@
+#include <Fri3dBadge.h>
+
+// create an instance of the badge
+Fri3dBadge badge;
+
+void setup() {
+  // prepare randomness with some random reading from an unconnected analog pin
+  randomSeed(analogRead(0));
+  randomSeed(analogRead(1));
+  randomSeed(analogRead(2));
+  randomSeed(analogRead(3));
+  randomSeed(analogRead(4));
+  
+  // select our own random color at boot ...
+  select_color();
+  
+  // ... and allow to reselect using the button
+  badge.on_button_change(reselect_color);
+  
+  // start the IR receiver
+  badge.on_ir_activity(handle_activity);
+  badge.ir_rx_start();
+}
+
+uint8_t r = 0, g = 0, b = 0;
+
+void select_color() {
+  r = g = b = 0;
+  while( (r == 0) && (g == 0) && (b == 0)) {
+    r = random(2) * 25;
+    g = random(2) * 25;
+    b = random(2) * 25;
+  }
+}
+
+bool select_new_color = false;
+
+void reselect_color() {
+  if( ! badge.button_is_pressed() ) {
+    select_new_color = true;
+  }
+}
+
+bool activity_detected = false;
+
+// don't respond to the very first interrupt, but make sure the received pulse
+// was part of a pulse train
+#define SKIP_ACTIVITY 2
+int8_t skip_activity;
+
+// don't respond to our own IR signals ;-)
+volatile bool sending = false;
+
+void handle_activity() {
+  if(sending) { return; }
+  if(skip_activity-- > 0) { return; }
+  // set a flag to handle the activity (don't do too much in interrupt handler)
+  activity_detected = true;
+}
+
+void flash_color() {
+  badge.rgb_set_color(r, g, b);
+  delay(500);
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void fade_color() {
+  for(uint8_t i=0; i<25; i++) {
+    badge.rgb_set_color(r/25*i, g/25*i, b/25*i);
+    delay(10);
+  }
+  delay(500);
+  for(int8_t i=25; i>0; i--) {
+    badge.rgb_set_color(r/25*i, g/25*i, b/25*i);
+    delay(10);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void wheel( byte pos ) {
+  if(pos < 85) {
+   badge.rgb_set_color( pos, 85 - pos, 0 );
+  } else if( pos < 170) {
+   pos -= 85;
+   badge.rgb_set_color( 85 - pos, 0, pos );
+  } else {
+   pos -= 170;
+   badge.rgb_set_color( 0, pos, 85 - pos );
+  }
+}
+
+void fire ( byte pos ) {
+  if(pos < 85) {
+   badge.rgb_set_color( pos*3, 0, 0  );
+  } else if( pos < 170) {
+   pos -= 85;
+   badge.rgb_set_color( 255, pos, 0 );
+  } else {
+   pos -= 170;
+   badge.rgb_set_color( 255, 86, pos / 2 );
+  }
+}
+
+void nature ( byte pos ) {
+  if(pos < 85) {
+   badge.rgb_set_color( 0, pos * 2, pos / 2  );
+  } else if( pos < 170) {
+   pos -= 85;
+   badge.rgb_set_color( pos * 3, 170, 85 - (pos / 2) );
+  } else {
+   pos -= 170;
+   badge.rgb_set_color( 255 - (pos * 3), 255 - (pos * 2), 0 );
+  }
+}
+
+void ice ( byte pos ) {
+  if(pos < 85) {
+   badge.rgb_set_color( pos * 3, pos, 255 - (pos * 2 ));
+  } else if( pos < 170) {
+   badge.rgb_set_color( 255, 86, 85 );
+  } else {
+   pos -= 170;
+   badge.rgb_set_color( 255 - (pos * 3), 86 - pos, 85 + pos * 2);
+  }
+}
+
+
+void reply_with_party_parrot() {
+  for(uint8_t i = 0; i < 255; i++) {
+    wheel(i);
+    delay(8);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void reply_with_sparkle() {
+    uint8_t r;
+    for(uint8_t i = 0; i < 255; i++) {
+    r = random(255);
+    badge.rgb_set_color(r, random(r>>2), random(r>>4));
+      delay(8);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void reply_with_lightning() {
+  uint8_t flash;
+  uint8_t bang = 0;
+  
+  for(uint8_t i = 0; i < 255; i++) {
+    flash = random(32);
+    if (flash==31){
+      badge.rgb_set_color(64, 16, 255);
+      bang++;
+        if (bang==6){
+          badge.rgb_set_color(128, 32, 255); 
+          delay(100);            
+        }
+    }
+    delay(4);
+    badge.rgb_set_color(0, 0, 0);
+  }
+  if (bang<6){
+    badge.rgb_set_color(128, 32, 255); 
+    delay(100);            
+    badge.rgb_set_color(0, 0, 0);
+  }
+}
+
+void reply_with_fire() {
+  uint8_t r = random(255);
+  int8_t d = 1;
+  for(uint8_t i = 0; i < 255; i++) {
+    
+    if ((i & 0x0F) == 0x0F) d = random(2);
+    if (d == 0) d = -1;
+     
+    if (r > 251) d = -1;
+    if (r < 4) d = 1;
+
+    r += (d * 4);
+        
+    fire(r);
+    delay(8);
+  }
+  while (r > 3){
+    r -= 4;
+    fire(r);
+    delay(8);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void reply_with_nature() {
+  uint8_t r = random(255);
+  int8_t d = 1;
+  for(uint8_t i = 0; i < 100; i++) {
+    
+    if ((i & 0x0F) == 0x0F) d = random(2);
+    if (d == 0) d = -1;
+     
+    if (r > 251) d = -1;
+    if (r < 4) d = 1;
+
+    r += (d * 4);
+        
+    nature(r);
+    delay(32);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void reply_with_ice() {
+  uint8_t b = random(255);
+  for(uint8_t i = 0; i < 255; i++) {
+    ice(b);
+    b += (i / 16);
+    delay(8);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+
+void reply_with_random() {
+  uint8_t rnd = random(6);
+
+  switch(rnd){
+
+    case 0:
+      reply_with_party_parrot();  //RGB!
+      break;
+    case 1:
+      reply_with_sparkle();       //Warm gespetter
+      break;
+    case 2:
+      reply_with_lightning();     //Onweer!
+      break;
+    case 3:
+      reply_with_fire();          //Vuurkleurtjes
+      break;
+    case 4:
+      reply_with_nature();        //Mooi groen
+      break;
+    case 5:
+      reply_with_ice();           //Brrr.
+  }  
+  
+}
+
+// timestamp of next dialog (= send pulse train)
+uint32_t next_dialog = 0;
+
+// we take a minimal interval of 5s and add a random part of the same length
+#define INTERVAL    5000 + (random(6) * 1000) // start dialog every 5s + [0-5]s
+
+// a pulse train of x pulses of pulse length y
+#define PULSES        10
+#define PULSE_LENGTH 500   // us
+
+void loop() {
+  uint32_t now = millis(); // rollover of ~49.7 days ... not gonna happen ;-)
+
+  // start a dialog at INTERVAL
+  if( now >= next_dialog ) {
+    fade_color();
+    
+    // send an IR pulse train
+    sending = true;
+    for(uint8_t t=0; t<PULSES; t++) {
+      badge.ir_send_pulse(PULSE_LENGTH);
+      delayMicroseconds(PULSE_LENGTH);
+    }
+    sending = false;
+
+    // schedule the next dialog after interval
+    next_dialog = now + INTERVAL;
+  }
+
+  // respond to activity
+  if(activity_detected) {
+    delay(250);
+    activity_detected = false;
+    reply_with_random();
+    skip_activity = SKIP_ACTIVITY;
+    next_dialog = now + INTERVAL;
+  }
+
+  // handle new color selection request
+  if(select_new_color) {
+    select_color();
+    flash_color();
+    select_new_color = false;
+    next_dialog = now + INTERVAL;
+  }
+
+  delay(5);
+}
