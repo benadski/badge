@@ -89,6 +89,21 @@ void wheel( byte pos ) {
   }
 }
 
+void fri3d( byte pos ) {
+  if(pos < 64) {
+   badge.rgb_set_color( pos * 4, pos / 2, 0 );
+  } else if( pos < 128) {
+   pos -= 64;
+   badge.rgb_set_color( 255 - (pos * 4), 32 - (pos / 2), 0 );
+  } else if( pos < 192) {
+   pos -= 128;
+   badge.rgb_set_color( 0, pos, pos * 4 );
+  } else {
+   pos -= 192;
+   badge.rgb_set_color( 0, 64 - pos, 255 - (pos * 4));
+  }
+}
+
 void fire ( byte pos ) {
   if(pos < 85) {
    badge.rgb_set_color( pos*3, 0, 0  );
@@ -129,6 +144,14 @@ void reply_with_party_parrot() {
   for(uint8_t i = 0; i < 255; i++) {
     wheel(i);
     delay(8);
+  }
+  badge.rgb_set_color(0, 0, 0);
+}
+
+void reply_with_fri3d() {
+  for(uint16_t i = 0; i < 1024; i++) {
+    fri3d((uint8_t)(i % 256));
+    delay(2);
   }
   badge.rgb_set_color(0, 0, 0);
 }
@@ -222,7 +245,7 @@ void reply_with_ice() {
 
 
 void reply_with_random() {
-  uint8_t rnd = random(6);
+  uint8_t rnd = random(7);
 
   switch(rnd){
 
@@ -243,6 +266,9 @@ void reply_with_random() {
       break;
     case 5:
       reply_with_ice();           //Brrr.
+      break;
+    case 6:
+      reply_with_fri3d();         //Fried kleurtjes
   }  
   
 }
