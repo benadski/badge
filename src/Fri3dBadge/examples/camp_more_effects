@@ -22,14 +22,14 @@ void setup() {
   badge.ir_rx_start();
 }
 
-uint8_t r = 0, g = 0, b = 0;
+uint8_t rb, gb, bb;
 
 void select_color() {
-  r = g = b = 0;
-  while( (r == 0) && (g == 0) && (b == 0)) {
-    r = random(2) * 25;
-    g = random(2) * 25;
-    b = random(2) * 25;
+  rb = gb = bb = 0;
+  while( (rb == 0) && (gb == 0) && (bb == 0)) {
+    rb = random(4) * 32;
+    gb = random(4) * 16;
+    bb = random(4) * 8;
   }
 }
 
@@ -59,20 +59,28 @@ void handle_activity() {
 }
 
 void flash_color() {
-  badge.rgb_set_color(r, g, b);
+  badge.rgb_set_color(rb, gb, bb);
   delay(500);
   badge.rgb_set_color(0, 0, 0);
 }
 
 void fade_color() {
-  for(uint8_t i=0; i<25; i++) {
-    badge.rgb_set_color(r/25*i, g/25*i, b/25*i);
-    delay(10);
+  uint16_t rf = rb;
+  uint16_t gf = gb;
+  uint16_t bf = bb;
+  
+  for(uint16_t i=0; i<255; i++) {
+    badge.rgb_set_color((uint8_t)((rf*i)/256), (uint8_t)((gf*i)/256), (uint8_t)((bf*i)/256));
+    delay(4);
   }
   delay(500);
-  for(int8_t i=25; i>0; i--) {
-    badge.rgb_set_color(r/25*i, g/25*i, b/25*i);
-    delay(10);
+  
+  for(uint8_t i=0; i<255; i++) {
+     if (rf > 0) rf--;
+     if (gf > 0) gf--;
+     if (bf > 0) bf--;
+     badge.rgb_set_color((uint8_t)(rf),(uint8_t)(gf),(uint8_t)(bf));
+     delay(10);
   }
   badge.rgb_set_color(0, 0, 0);
 }
